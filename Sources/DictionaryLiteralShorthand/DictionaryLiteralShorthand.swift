@@ -32,4 +32,4 @@
 ///
 /// Basically the same as: https://developer.apple.com/documentation/uikit/nsdictionaryofvariablebindings , but in Swift.
 @freestanding(expression)
-public macro dict(_ value: Any...) -> [AnyHashable: Any] = #externalMacro(module: "DictionaryLiteralShorthandMacros", type: "DictionaryLiteralShorthandMacro")
+public macro dict(_ value: Any...) -> [String: Any] = #externalMacro(module: "DictionaryLiteralShorthandMacros", type: "DictionaryLiteralShorthandMacro")
